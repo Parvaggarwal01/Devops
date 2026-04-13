@@ -1,0 +1,15 @@
+<!DOCTYPE>
+<html>
+  <body>
+    <h1>Frontend</h1>
+    <button onclick="load()">Call Backend</button>
+    <p id="res"></p>
+    <script>
+    async function load(){
+      let r = await fetch('http://localhost:5000/');
+      let t = await r.text();
+      document.getElementById('res').innerText=t;
+    }
+    </script>
+  </body>
+</html>

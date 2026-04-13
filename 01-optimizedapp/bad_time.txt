@@ -1,0 +1,94 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.bad
+#1 transferring dockerfile: 144B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11
+#2 DONE 2.6s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 110B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/python:3.11@sha256:4651409ff55024245f70920259ecee27f2109b0dc0e502a10bce541f1072cd66
+#4 resolve docker.io/library/python:3.11@sha256:4651409ff55024245f70920259ecee27f2109b0dc0e502a10bce541f1072cd66 done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 19.02kB done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] COPY . .
+#7 DONE 0.0s
+
+#8 [4/4] RUN pip install -r requirements.txt
+#8 1.407 Collecting flask==3.0.0 (from -r requirements.txt (line 1))
+#8 1.583   Downloading flask-3.0.0-py3-none-any.whl.metadata (3.6 kB)
+#8 1.646 Collecting requests==2.31.0 (from -r requirements.txt (line 2))
+#8 1.664   Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+#8 1.800 Collecting Werkzeug>=3.0.0 (from flask==3.0.0->-r requirements.txt (line 1))
+#8 1.818   Downloading werkzeug-3.1.7-py3-none-any.whl.metadata (4.0 kB)
+#8 1.856 Collecting Jinja2>=3.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+#8 1.875   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#8 1.908 Collecting itsdangerous>=2.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+#8 1.926   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#8 1.963 Collecting click>=8.1.3 (from flask==3.0.0->-r requirements.txt (line 1))
+#8 1.982   Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+#8 2.098 Collecting blinker>=1.6.2 (from flask==3.0.0->-r requirements.txt (line 1))
+#8 2.120   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#8 2.262 Collecting charset-normalizer<4,>=2 (from requests==2.31.0->-r requirements.txt (line 2))
+#8 2.299   Downloading charset_normalizer-3.4.6-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (40 kB)
+#8 2.317      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.6/40.6 kB 2.8 MB/s eta 0:00:00
+#8 2.348 Collecting idna<4,>=2.5 (from requests==2.31.0->-r requirements.txt (line 2))
+#8 2.368   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+#8 2.420 Collecting urllib3<3,>=1.21.1 (from requests==2.31.0->-r requirements.txt (line 2))
+#8 2.439   Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+#8 2.490 Collecting certifi>=2017.4.17 (from requests==2.31.0->-r requirements.txt (line 2))
+#8 2.513   Downloading certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+#8 2.678 Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==3.0.0->-r requirements.txt (line 1))
+#8 2.697   Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (2.7 kB)
+#8 2.810 Downloading flask-3.0.0-py3-none-any.whl (99 kB)
+#8 2.852    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.7/99.7 kB 3.0 MB/s eta 0:00:00
+#8 2.874 Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+#8 2.903    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 2.2 MB/s eta 0:00:00
+#8 2.925 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#8 2.950 Downloading certifi-2026.2.25-py3-none-any.whl (153 kB)
+#8 2.986    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 153.7/153.7 kB 4.6 MB/s eta 0:00:00
+#8 3.020 Downloading charset_normalizer-3.4.6-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (197 kB)
+#8 3.152    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 197.2/197.2 kB 1.5 MB/s eta 0:00:00
+#8 3.175 Downloading click-8.3.1-py3-none-any.whl (108 kB)
+#8 3.206    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.3/108.3 kB 4.0 MB/s eta 0:00:00
+#8 3.225 Downloading idna-3.11-py3-none-any.whl (71 kB)
+#8 3.244    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.0/71.0 kB 6.5 MB/s eta 0:00:00
+#8 3.348 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#8 3.372 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#8 3.392    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 7.0 MB/s eta 0:00:00
+#8 3.414 Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+#8 3.449    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.6/131.6 kB 3.7 MB/s eta 0:00:00
+#8 3.468 Downloading werkzeug-3.1.7-py3-none-any.whl (226 kB)
+#8 3.505    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.3/226.3 kB 6.2 MB/s eta 0:00:00
+#8 3.523 Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (24 kB)
+#8 3.604 Installing collected packages: urllib3, MarkupSafe, itsdangerous, idna, click, charset-normalizer, certifi, blinker, Werkzeug, requests, Jinja2, flask
+#8 4.038 Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.7 blinker-1.9.0 certifi-2026.2.25 charset-normalizer-3.4.6 click-8.3.1 flask-3.0.0 idna-3.11 itsdangerous-2.2.0 requests-2.31.0 urllib3-2.6.3
+#8 4.039 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 4.259 
+#8 4.259 [notice] A new release of pip is available: 24.0 -> 26.0.1
+#8 4.259 [notice] To update, run: pip install --upgrade pip
+#8 DONE 4.4s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.7s done
+#9 exporting manifest sha256:c1f6d15d21898d98dc782ee0c8497c7e0de0e53aaa06785e73e55b6e043e688d
+#9 exporting manifest sha256:c1f6d15d21898d98dc782ee0c8497c7e0de0e53aaa06785e73e55b6e043e688d done
+#9 exporting config sha256:87b7d0fa0e458c6055679e8f1ce74021bc27f8aa0ea759de5f71975899804a87 done
+#9 exporting attestation manifest sha256:9aaa08b7e8d2e2cecee0de88cac1ec028296e829ebb8a7e962c31255a4d3f142 done
+#9 exporting manifest list sha256:871c829eb23d4a6dc26ec7597e79c09d14afdde3efde31a92e9b593f7c06e747 done
+#9 naming to docker.io/library/optimizedapp:bad done
+#9 unpacking to docker.io/library/optimizedapp:bad 0.1s done
+#9 DONE 0.9s
+docker build -f Dockerfile.bad -t optimizedapp:bad .  0.12s user 0.17s system 3% cpu 8.969 total
