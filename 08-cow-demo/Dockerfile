@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY message.txt /app/message.txt
 
-CMD ["sh" 
+CMD ["sh"]
